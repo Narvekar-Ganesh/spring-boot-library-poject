@@ -2,14 +2,16 @@ package home.practice.spring.service;
 
 import home.practice.spring.domain.Book;
 import home.practice.spring.repository.BookRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 @Service
 public class BookService {
+    private  static final Logger LOGGER = LoggerFactory.getLogger(StudentService.class);
 
     @Autowired
     private BookRepository bookRepository;
@@ -22,6 +24,7 @@ public class BookService {
             book = null;
         }
         System.out.println("BookService.getBookById() - book from database : " + book);
+        LOGGER.info("Book from database:{}",book);
         return book;
     }
 

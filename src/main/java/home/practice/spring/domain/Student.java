@@ -23,9 +23,9 @@ public class Student {
     private int rollNumber;
 
     @Column
-    private String name;
+    private String studentName;
     @Column
-    private String gender;
+    private Gender gender;
 
     @Column
     private String addresLine1;
