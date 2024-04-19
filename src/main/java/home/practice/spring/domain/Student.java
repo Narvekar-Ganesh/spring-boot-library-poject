@@ -32,6 +32,4 @@ public class Student {
 
     @Column
     private String addresLine2;
-
-
 }

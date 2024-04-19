@@ -11,49 +11,48 @@ import javax.transaction.Transactional;
 
 @Service
 public class BookService {
-    private  static final Logger LOGGER = LoggerFactory.getLogger(StudentService.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(StudentService.class);
 
     @Autowired
     private BookRepository bookRepository;
 
-    public Book getBookById(Long id){
+    public Book getBookById(Long id) {
         Book book = null;
-        try{
+        try {
             book = bookRepository.getById(id);
-        }catch(Exception entityNotFoundException){
+        } catch (Exception entityNotFoundException) {
             book = null;
         }
-        System.out.println("BookService.getBookById() - book from database : " + book);
-        LOGGER.info("Book from database:{}",book);
+        LOGGER.info("Book from database:{}", book);
         return book;
     }
 
-    public Book saveBook(Book book){
+    public Book saveBook(Book book) {
         return bookRepository.save(book);
     }
 
-    public Book  updateBook( Book  book){
-         return  bookRepository.saveAndFlush(book);
+    public Book updateBook(Book book) {
+        return bookRepository.saveAndFlush(book);
     }
 
-    public Book getBookByBookName(String bookName){
+    public Book getBookByBookName(String bookName) {
         return bookRepository.findByBookName(bookName);
     }
 
-    public Book getBookByAuther(String autherName){
-       return bookRepository.findByAutherName(autherName);
+    public Book getBookByAuther(String autherName) {
+        return bookRepository.findByAutherName(autherName);
     }
 
-    public Book getBookByBookNameAutherName(String bookName,String autherName){
-        return bookRepository.findByBookNameAndAutherName(bookName,autherName);
+    public Book getBookByBookNameAutherName(String bookName, String autherName) {
+        return bookRepository.findByBookNameAndAutherName(bookName, autherName);
     }
 
-    public void deleteBookById(Long id){
-        bookRepository.deleteById(id)   ;
+    public void deleteBookById(Long id) {
+        bookRepository.deleteById(id);
     }
 
     @Transactional
-     public Long deleteBookByBookName(String bookName){
+    public Long deleteBookByBookName(String bookName) {
         return bookRepository.deleteByBookName(bookName);
-     }
+    }
 }

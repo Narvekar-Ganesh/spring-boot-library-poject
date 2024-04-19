@@ -1,0 +1,39 @@
+2024-04-18 14:28:11,351 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log.173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 14:28:11,351 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean.525 : Initializing Servlet 'dispatcherServlet'
+2024-04-18 14:28:11,353 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean.547 : Completed initialization in 2 ms
+2024-04-18 14:28:11,618 INFO  [http-nio-8080-exec-1] home.practice.spring.BookController.saveBook.56 : book: Book(id=null, bookNumber=1234560, bookName=CCCCASSS, autherName=null, isbnNumber=null, price=null)
+2024-04-18 14:28:11,726 INFO  [http-nio-8080-exec-1] home.practice.spring.BookController.saveBook.59 : Book is saved :Book(id=1, bookNumber=1234560, bookName=CCCCASSS, autherName=null, isbnNumber=null, price=null) 
+2024-04-18 14:29:14,881 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy.651 : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 14:29:14,882 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform.526 : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-18 14:29:14,888 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close.350 : HikariPool-1 - Shutdown initiated...
+2024-04-18 14:29:14,894 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close.352 : HikariPool-1 - Shutdown completed.
+2024-04-18 14:30:27,860 INFO  [main] home.practice.spring.BookController.logStarting.55 : Starting BookController using Java 1.8.0_202 on LAPTOP-LO0BGQ4H with PID 16516 (C:\Java-projects\spring-boot-library-poject\target\classes started by LENOVO in C:\Java-projects\spring-boot-library-poject)
+2024-04-18 14:30:27,864 INFO  [main] home.practice.spring.BookController.logStartupProfileInfo.659 : No active profile set, falling back to default profiles: default
+2024-04-18 14:30:28,775 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn.132 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18 14:30:28,868 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn.201 : Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+2024-04-18 14:30:29,712 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize.108 : Tomcat initialized with port(s): 8080 (http)
+2024-04-18 14:30:29,723 INFO  [main] org.apache.catalina.core.StandardService.log.173 : Starting service [Tomcat]
+2024-04-18 14:30:29,724 INFO  [main] org.apache.catalina.core.StandardEngine.log.173 : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2024-04-18 14:30:29,823 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log.173 : Initializing Spring embedded WebApplicationContext
+2024-04-18 14:30:29,824 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext.290 : Root WebApplicationContext: initialization completed in 1887 ms
+2024-04-18 14:30:29,866 INFO  [main] com.zaxxer.hikari.HikariDataSource.getConnection.110 : HikariPool-1 - Starting...
+2024-04-18 14:30:30,090 INFO  [main] com.zaxxer.hikari.HikariDataSource.getConnection.123 : HikariPool-1 - Start completed.
+2024-04-18 14:30:30,097 INFO  [main] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0.68 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ganeshdb'
+2024-04-18 14:30:30,412 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation.31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18 14:30:30,462 INFO  [main] org.hibernate.Version.logVersion.44 : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-04-18 14:30:30,593 INFO  [main] org.hibernate.annotations.common.Version.<clinit>.56 : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-18 14:30:30,704 INFO  [main] org.hibernate.dialect.Dialect.<init>.175 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-18 14:30:31,296 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService.52 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-18 14:30:31,306 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 14:30:31,904 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.219 : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18 14:30:32,314 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start.220 : Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-18 14:30:32,325 INFO  [main] home.practice.spring.BookController.logStarted.61 : Started BookController in 4.957 seconds (JVM running for 5.441)
+2024-04-18 14:30:36,909 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log.173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 14:30:36,910 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet.initServletBean.525 : Initializing Servlet 'dispatcherServlet'
+2024-04-18 14:30:36,913 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet.initServletBean.547 : Completed initialization in 3 ms
+2024-04-18 14:30:37,210 INFO  [http-nio-8080-exec-2] home.practice.spring.BookController.saveBook.56 : book: Book(id=null, bookNumber=1234560, bookName=CCCCASSS, autherName=null, isbnNumber=null, price=null)
+2024-04-18 14:30:37,293 INFO  [http-nio-8080-exec-2] home.practice.spring.BookController.saveBook.59 : Book is saved :Book(id=1, bookNumber=1234560, bookName=CCCCASSS, autherName=null, isbnNumber=null, price=null) 
+2024-04-18 14:32:07,188 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy.651 : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18 14:32:07,189 INFO  [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform.526 : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-18 14:32:07,195 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close.350 : HikariPool-1 - Shutdown initiated...
+2024-04-18 14:32:07,201 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close.352 : HikariPool-1 - Shutdown completed.
